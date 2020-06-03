@@ -23,3 +23,5 @@ Auth::routes();
 Route::get('/', function () {
     return view('top');
 });
+
+Route::get('/matching', 'MatchingController@index')->name('matching');
